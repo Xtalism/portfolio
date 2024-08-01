@@ -16,6 +16,7 @@
   --text-color: white;
   --main-color: #9d0208;
   --icon-color: white;
+  --nav-bar-color: #101010;
   /* --main-color: #B43F3F; */
 }
 
@@ -36,7 +37,7 @@ body {
   left: 0;
   width: 100%;
   padding: 2rem 12% 2rem;
-  background: var(--second-bg-color);
+  background: var(--nav-bar-color);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -81,8 +82,9 @@ a:nth-child(1):active ~ {
 
 #menu-icon {
   font-size: 2rem;
-  color: var(--second-bg-color);
+  /* color: var(--second-bg-color); */
   display: inline;
+  visibility: collapse;
 }
 
 section {
@@ -302,6 +304,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -10rem;
 }
 
 .title-about {
@@ -339,7 +342,8 @@ span {
 
 .contact {
   background-color: var(--second-bg-color);
-}
+  margin-top: -10rem;
+  }
 
 .contact h2 {
   margin-bottom: 3rem;
@@ -383,6 +387,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -10rem;
 }
 
 .projects-box {
