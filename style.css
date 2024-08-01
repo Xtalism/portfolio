@@ -141,8 +141,8 @@ span {
 }
 
 .home-content p {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
   line-height: 1.8;
   max-width: 1000px;
 }
@@ -311,7 +311,7 @@ span {
   line-height: 1.6em;
   padding: 0 0 0 25em;
   font-size: 1.8rem;
-  font-weight: 100;
+  font-weight: 400;
   margin-left: 11.35em;
 }
 
@@ -373,7 +373,7 @@ span {
 
 .projects-box h2 {
   font-size: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .projects-box h3 {
@@ -388,7 +388,7 @@ span {
 .projects-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
   padding: 1em;
 }
@@ -397,6 +397,7 @@ span {
   background: var(--bg-color);
   padding: 2rem;
   border-radius: 2rem;
+  box-shadow: 0 0 2px var(--main-color);
   text-align: center;
   transition: 0.3s ease-in-out;
   display: flex;
@@ -407,6 +408,7 @@ span {
 
 .project:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 10px var(--main-color);
   cursor: pointer;
 }
 
