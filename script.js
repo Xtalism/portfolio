@@ -23,3 +23,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var panels = document.querySelectorAll("div[class='project']");
+
+  panels.forEach(function (panel) {
+    panel.addEventListener("click", function (event) {
+      event.preventDefault();
+      switch (panel.id) {
+        case "fault-detection":
+          window.open("https://github.com/Xtalism/object-detection", "_blank");
+          break;
+        case "portfolio":
+          window.open("https://www.youtube.com/watch?v=UqHILyzcULE&t=1817s&ab_channel=HowtoWebDev", "_blank");
+          break;
+        case "robotic-arm":
+          window.open("https://github.com/Xtalism/aero-pid-controller", "_blank");
+          break;
+        default:
+          console.log("No matching link found.");
+      }
+    });
+  });
+});
