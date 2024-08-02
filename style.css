@@ -364,10 +364,12 @@ span {
 }
 
 .skills-space {
-  margin-top: 6rem;
+  margin-top: 3rem;
   width: 100%;
-  padding: 6rem 12% 6rem;
-  display: flex;
+  padding: 4rem 12% 4rem;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  gap: 2rem;  
   justify-content: space-between;
   align-items: center;
   border: 0.5px solid var(--border-color);
