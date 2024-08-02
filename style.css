@@ -363,6 +363,17 @@ span {
   font-size: 1.2rem;
 }
 
+.skills-space {
+  margin-top: 6rem;
+  width: 100%;
+  padding: 6rem 12% 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.5px solid var(--border-color);
+  background-color: var(--second-bg-color);
+}
+
 .contact {
   background-color: var(--second-bg-color);
   margin-top: -10rem;
