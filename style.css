@@ -13,11 +13,13 @@
   --bg-color: #080808;
   --second-bg-color: #131313;
   --border-color: #3d3d3d;
-  --text-color: white;
-  --main-color: #9d0208;
-  --second-main-color: #2b10e9;
-  --icon-color: white;
+  --text-color: #f9f6f2;
+  --main-color: #de4139;
+  /* --second-main-color: #0063d4; */
+  --icon-color: #d1d1d1;
   --nav-bar-color: #101010;
+  --green-color: #84dcc6;
+  /* --green-color: #89deae; */
   /* --main-color: #B43F3F; */
 }
 
@@ -140,7 +142,7 @@ span {
 .home-img img {
   width: 100%;
   height: auto;
-  box-shadow: 0 0 20px #be182c;
+  /* box-shadow: 0 0 20px #be182c; */
   border-radius: 50%;
 }
 
@@ -356,6 +358,7 @@ span {
   line-height: 1.6em;
   font-size: 1.5rem;
   font-weight: 400;
+  color: var(--green-color);
 }
 
 .education-links {
@@ -397,7 +400,7 @@ span {
 }
 
 .projects-box h2 {
-  font-size: 4rem;
+  font-size: 5.5rem;
   margin-bottom: 10rem;
 }
 
@@ -405,6 +408,7 @@ span {
   font-size: 2rem;
   margin-bottom: 2rem;
   margin-top: 5rem;
+  color: #94d3af;
   /* background-color: black; */
   /* border-radius: 2rem; */
   /* color: var(--icon-color); */
@@ -413,7 +417,7 @@ span {
 .projects-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3.5rem;
+  gap: 2rem;
   width: 100%;
   padding: 1em;
 }
@@ -423,7 +427,7 @@ span {
   height: 43rem;
   width: 28rem;
   padding: 2rem;
-  border-radius: 2rem;
+  border-radius: 3rem;
   /* border: 0.5px solid var(--main-color); */
   text-align: center;
   transition: 0.3s ease-in-out;
@@ -473,10 +477,16 @@ span {
   text-align: center;
 }
 
+.contact span {
+  margin-bottom: 2.5rem;
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
 .contact h2 {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   color: var(--text-color);
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .contact form {
@@ -484,7 +494,7 @@ span {
   flex-direction: column;
   align-items: center;
   /* gap: 1.5rem; */
-  margin: 10px 0 10px 80rem;
+  /* margin: 10px 0 10px 80rem; */
   max-width: 600px;
 }
 
@@ -500,6 +510,7 @@ span {
   background: var(--bg-color);
   border-radius: 1rem;
   margin: 0.5rem 0;
+  border: 0.5px solid var(--icon-color);
   resize: none;
 }
 
@@ -512,12 +523,22 @@ span {
   background: var(--bg-color);
   border-radius: 1rem;
   margin: 0.5rem 0;
+  border: 0.5px solid var(--icon-color);
   resize: none;
 }
 
 .contact form .btn {
   margin-top: 1.5rem;
-  width: 35%;
+  height: auto;
+  width: auto;
+  background-color: black;
+  font-weight: 100;
+  color: var(--icon-color);
+  border: 0.5px solid var(--icon-color);
+}
+
+.contact form .btn:hover {
+  scale: 3px;
 }
 
 /* .footer {
