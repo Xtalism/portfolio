@@ -374,8 +374,8 @@ span {
   width: 100%;
   padding: 4rem 12% 4rem;
   display: grid;
-  grid-template-columns: repeat(19, 1fr);
-  gap: 2rem;  
+  grid-template-columns: repeat(20, 1fr);
+  gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
   border: 0.5px solid var(--border-color);
@@ -494,7 +494,7 @@ span {
 }
 
 .contact h2::after {
-  content: '';
+  content: "";
   width: 60px;
   height: 4px;
   background-color: var(--main-color);
@@ -591,7 +591,7 @@ span {
 }
 
 .contact form .btn-contact::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -614,13 +614,32 @@ span {
 .btn-contact {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background-color: var(--icon-color);
   border-radius: 4rem;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   font-weight: 750;
   transition: 0.3s ease-in-out;
-  cursor: pointer; 
+  cursor: pointer;
+}
+
+.social-icons-contact a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  background: var(--bg-color);
+  font-size: 2rem;
+  border-radius: 10%;
+  color: var(--text-color);
+  margin: 0rem;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons-contact a:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+  transform: scale(1.2);
 }
 
 /* .footer {
@@ -640,7 +659,7 @@ span {
   color: var(--main-color);
 } */
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .home {
     flex-direction: column;
     justify-content: center;
@@ -697,12 +716,61 @@ span {
     padding: 0;
   }
 
+  .about-img {
+    margin-top: 2rem;
+  }
+
+  .skills-space {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
   .projects-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects {
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10rem;
+    margin-bottom: -10rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 1024px) {
+
+  .skills-space {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .projects-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width <= 1150px) {
+
+  .education-title {
+    margin-left: -35rem;
+    margin-top: 6rem;
+  }
+
+  .education {
+    margin-left: -33.6rem;
+  }
+
+  .skills-space {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .projects-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (width <= 900px) {
   .home-content h1 {
     font-size: 3rem;
   }
@@ -715,69 +783,44 @@ span {
     font-size: 24px;
   }
 
+  .about {
+    margin-top: -15rem;
+    margin-bottom: -30rem;
+  }
+
+  .about-content {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -4rem;
+  }
+  
+  .education-title {
+    margin-top: 2rem;   
+    margin-left: 0rem;   
+  }
+  
+  .education {
+    margin-left: 1.6rem;
+  }
+  
   .about-me {
-    margin-top: 1em;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.6em;
     font-size: 1.2rem;
     font-weight: 200;
-    padding: 0;
-    margin-left: 0;
-  }
-
-  .title-about {
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 0;
   }
 
   .projects-content {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 425px) {
-  .home-content h1 {
-    font-size: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .home-content p {
-    font-size: 1rem;
+  .about-img {
+    display: none;
   }
 
-  .text-animation {
-    font-size: 18px;
-  }
-
-  .about-me {
-    margin-top: 1em;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.6em;
-    font-size: 1rem;
-    font-weight: 100;
-    padding: 0;
-    margin-left: 0;
-  }
-
-  .title-about {
-    text-align: center;
-    font-size: 2rem;
-    padding: 0;
-  }
-
-  .projects-content {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
   .contact {
     padding: 3rem 5%;
   }
 
   .contact h2 {
+    margin-top: 6rem;
     font-size: 2.5rem;
   }
 
@@ -786,7 +829,7 @@ span {
   }
 
   .contact-info {
-    text-align: center;
+    text-align: left;
   }
 
   .contact form {
@@ -803,9 +846,99 @@ span {
     padding: 1rem 2rem;
     font-size: 1.4rem;
   }
+
+  .about-img {
+    display: none;
+  }
 }
 
-@media (max-width: 425px) {
+@media (width <= 720px) {
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .text-animation {
+    font-size: 18px;
+  }
+
+  .title-about {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .projects-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .contact {
+    padding: 2rem 3%;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact form {
+    gap: 0.8rem;
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .contact form .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (width <= 720px) {
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .text-animation {
+    font-size: 18px;
+  }
+
+  .title-about {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .skills-space {
+    display: none;
+  }
+
+  .projects-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    margin-top: -25rem;
+    margin-bottom: -45rem;
+  }
+
+  .about-img {
+    display: none;
+  }
+
   .contact {
     padding: 2rem 3%;
   }
