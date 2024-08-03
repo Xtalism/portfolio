@@ -871,57 +871,6 @@ span {
     padding: 0;
   }
 
-  .projects-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about-img {
-    display: none;
-  }
-
-  .contact {
-    padding: 2rem 3%;
-  }
-
-  .contact h2 {
-    font-size: 2rem;
-  }
-
-  .contact form {
-    gap: 0.8rem;
-  }
-
-  .contact form .input-box input,
-  .contact form textarea {
-    padding: 0.8rem;
-    font-size: 1.2rem;
-  }
-
-  .contact form .btn {
-    padding: 0.8rem 1.6rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media (width <= 720px) {
-  .home-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .home-content p {
-    font-size: 1rem;
-  }
-
-  .text-animation {
-    font-size: 18px;
-  }
-
-  .title-about {
-    text-align: center;
-    font-size: 2rem;
-    padding: 0;
-  }
-
   .skills-space {
     display: none;
   }
@@ -962,3 +911,4 @@ span {
     font-size: 1.2rem;
   }
 }
+
