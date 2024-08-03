@@ -937,6 +937,10 @@ span {
     padding: 0;
   }
 
+  .education {
+    font-size: 1rem;
+  }
+
   .skills-space {
     display: none;
   }
