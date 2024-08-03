@@ -954,6 +954,10 @@ span {
     margin-top: 25rem;
   }
 
+  .projects h2 {
+    font-size: 3rem;
+  }
+
   .projects-content {
     grid-template-columns: 1fr;
   }
@@ -1005,13 +1009,11 @@ span {
 
   .social-icons a {
     font-size: 1.5rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     box-shadow: 0 0 2px var(--icon-color);  
   }
-}
 
-@media (width <= 646px) {
   @keyframes words {
     0%,
     25% {
