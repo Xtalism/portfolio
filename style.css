@@ -113,7 +113,6 @@ a:nth-child(1):active ~ {
   font-size: 1.6rem;
 }
 
-
 section {
   min-height: 100vh;
   padding: 10rem 12% 10rem;
@@ -992,5 +991,30 @@ span {
   .contact form .btn {
     padding: 0.8rem 1.6rem;
     font-size: 1.2rem;
+  }
+}
+
+@media (width <= 646px) {
+  @keyframes words {
+    0%,
+    25% {
+      content: "Mechatronic Eng.";
+    }
+    26%,
+    40% {
+      content: "Fullstack Developer";
+    }
+    41%,
+    60% {
+      content: "Web Developer";
+    }
+    61%,
+    80% {
+      content: "Robotics Developer";
+    }
+    81%,
+    100% {
+      content: "Problem Solver";
+    }
   }
 }
