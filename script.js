@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
         case "portfolio":
           window.open(
-            "https://www.youtube.com/watch?v=UqHILyzcULE&t=1817s&ab_channel=HowtoWebDev",
+            "https://github.com/Xtalism",
             "_blank"
           );
           break;
