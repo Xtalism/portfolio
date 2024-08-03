@@ -405,6 +405,11 @@ span {
   background-color: var(--second-bg-color);
 }
 
+.skill-icon:hover {
+  transform: scale(2);
+  transition: all .2s;
+}
+
 .projects {
   background: var(--second-bg-color);
   display: flex;
@@ -916,6 +921,7 @@ span {
   .projects {
     margin-top: 17rem;
   }
+  
 }
 
 @media (width <= 720px) {
