@@ -989,6 +989,13 @@ span {
   .footer {
     margin-top: 2rem;
   }
+
+  .social-icons a {
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 0 0 2px var(--icon-color);  
+  }
 }
 
 @media (width <= 646px) {
