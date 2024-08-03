@@ -679,7 +679,7 @@ span {
 
 @media (max-width: 1366px) {
   .home {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     justify-content: center;
     gap: 4rem;
   }
@@ -757,7 +757,6 @@ span {
 }
 
 @media (width <= 1024px) {
-
   .skills-space {
     grid-template-columns: repeat(10, 1fr);
   }
@@ -768,7 +767,6 @@ span {
 }
 
 @media (width <= 1150px) {
-
   .education-title {
     margin-left: -35rem;
     margin-top: 6rem;
@@ -785,7 +783,6 @@ span {
   .projects-content {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (width <= 900px) {
@@ -810,16 +807,16 @@ span {
     grid-template-columns: repeat(1, 1fr);
     margin-top: -4rem;
   }
-  
+
   .education-title {
-    margin-top: 2rem;   
-    margin-left: 0rem;   
+    margin-top: 2rem;
+    margin-left: 0rem;
   }
-  
+
   .education {
     margin-left: 1.6rem;
   }
-  
+
   .about-me {
     font-size: 1.2rem;
     font-weight: 200;
@@ -870,7 +867,7 @@ span {
   }
 }
 
-@media(max-width: 895px) {
+@media (max-width: 895px) {
   #menu-icon {
     display: block;
     color: var(--icon-color);
@@ -906,7 +903,7 @@ span {
     font-size: 8rem;
     margin-top: 3rem;
   }
-  
+
   .home-content p {
     max-width: 600px;
     margin: 0 auto;
@@ -945,7 +942,7 @@ span {
   }
 
   .projects {
-    margin-top: 15rem;
+    margin-top: 25rem;
   }
 
   .projects-content {
@@ -975,6 +972,7 @@ span {
 
   .contact form {
     gap: 0.8rem;
+    margin-top: -8rem;
   }
 
   .contact form .input-box input,
@@ -986,6 +984,10 @@ span {
   .contact form .btn {
     padding: 0.8rem 1.6rem;
     font-size: 1.2rem;
+  }
+
+  .footer {
+    margin-top: 2rem;
   }
 }
 
