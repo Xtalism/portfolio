@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
         case "portfolio":
           window.open(
-            "https://github.com/Xtalism",
+            "https://portfolio-d8k.pages.dev/#home",
             "_blank"
           );
           break;
