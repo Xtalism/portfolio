@@ -937,6 +937,10 @@ span {
     padding: 0;
   }
 
+  .education-title {
+    font-size: 1.75rem;
+  }
+
   .education {
     font-size: 1.2rem;
     text-align: justify;
@@ -1000,9 +1004,9 @@ span {
   }
 
   .social-icons a {
-    font-size: 2rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
     box-shadow: 0 0 2px var(--icon-color);  
   }
 }
