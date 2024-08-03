@@ -505,9 +505,9 @@ span {
   transition: transform 0.3s ease-in-out;
 }
 
-.contact:hover {
+/* .contact:hover {
   transform: translateY(-3px);
-}
+} */
 
 .contact h2 {
   margin-bottom: 9rem;
@@ -665,22 +665,17 @@ span {
   transform: scale(1.2);
 }
 
-/* .footer {
-  background: var(--second-bg-color);
+.footer {
+  background: var(--bg-color);
   text-align: center;
   padding: 3rem 0;
+  margin-top: -7.7rem;
 }
 
 .footer p {
   font-size: 1.4rem;
   color: var(--text-color);
 }
-
-.credits {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  color: var(--main-color);
-} */
 
 @media (max-width: 1366px) {
   .home {
