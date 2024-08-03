@@ -939,6 +939,7 @@ span {
 
   .education {
     font-size: 1rem;
+    text-align: justify;
   }
 
   .skills-space {
@@ -968,6 +969,10 @@ span {
 
   .contact {
     padding: 2rem 3%;
+  }
+
+  .contact p {
+    text-align: justify;
   }
 
   .contact h2 {
