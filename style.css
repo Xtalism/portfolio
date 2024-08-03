@@ -921,6 +921,10 @@ span {
   .home-img img {
     width: 52vw;
   }
+
+  .projects {
+    margin-top: 17rem;
+  }
 }
 
 @media (width <= 720px) {
