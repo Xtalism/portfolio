@@ -85,10 +85,34 @@ a:nth-child(1):active ~ {
 
 #menu-icon {
   font-size: 2rem;
-  /* color: var(--second-bg-color); */
-  display: inline;
-  visibility: collapse;
+  color: var(--second-bg-color);
+  /* display: inline; */
 }
+
+#menu-icon:hover {
+  cursor: pointer;
+}
+
+.navbar.active {
+  display: block;
+  position: absolute;
+  width: 12rem;
+  top: 6rem;
+  /* left: 0; */
+  border-radius: 0px;
+  border: 1px solid var(--border-color);
+  background: var(--nav-bar-color);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.navbar.active a {
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
 
 section {
   min-height: 100vh;
@@ -661,7 +685,7 @@ span {
 
 @media (max-width: 1366px) {
   .home {
-    flex-direction: column;
+    flex-direction: column-reverse; 
     justify-content: center;
     gap: 4rem;
   }
@@ -852,6 +876,53 @@ span {
   }
 }
 
+@media(max-width: 895px) {
+  #menu-icon {
+    display: block;
+    color: var(--icon-color);
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .home {
+    margin: 5rem 4rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+
+  .home-content h1 {
+    font-size: 8rem;
+    margin-top: 3rem;
+  }
+  
+  .home-content p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .home-img img {
+    width: 52vw;
+  }
+}
+
 @media (width <= 720px) {
   .home-content h1 {
     font-size: 2.5rem;
@@ -875,12 +946,20 @@ span {
     display: none;
   }
 
+  .projects {
+    margin-top: 15rem;
+  }
+
   .projects-content {
     grid-template-columns: 1fr;
   }
 
+  .title-about {
+    font-size: 3rem;
+  }
+
   .about {
-    margin-top: -25rem;
+    margin-top: -18rem;
     margin-bottom: -45rem;
   }
 
@@ -911,4 +990,3 @@ span {
     font-size: 1.2rem;
   }
 }
-
