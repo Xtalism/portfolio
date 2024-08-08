@@ -407,7 +407,7 @@ span {
 
 .skill-icon:hover {
   transform: scale(2);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .projects {
@@ -682,7 +682,7 @@ span {
   color: var(--text-color);
 }
 
-@media (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
   .home {
     flex-direction: column-reverse;
     justify-content: center;
@@ -761,7 +761,7 @@ span {
   }
 }
 
-@media (width <= 1024px) {
+@media screen and (max-width: 1024px) {
   .skills-space {
     grid-template-columns: repeat(10, 1fr);
   }
@@ -771,7 +771,7 @@ span {
   }
 }
 
-@media (width <= 1150px) {
+@media screen and (max-width: 1150px) {
   .education-title {
     margin-left: -35rem;
     margin-top: 6rem;
@@ -790,7 +790,7 @@ span {
   }
 }
 
-@media (width <= 900px) {
+@media screen and (max-width: 900px) {
   .home-content h1 {
     font-size: 3rem;
   }
@@ -872,7 +872,7 @@ span {
   }
 }
 
-@media (max-width: 895px) {
+@media screen and (max-width: 895px) {
   #menu-icon {
     display: block;
     color: var(--icon-color);
@@ -925,20 +925,27 @@ span {
   .footer {
     margin-top: 2rem;
   }
-  
 }
 
-@media (width <= 720px) {
+@media screen and (max-width: 720px) {
   .home-content h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .home-content p {
     font-size: 1rem;
   }
 
-  .text-animation {
-    font-size: 18px;
+  .text-animation h3 {
+    font-size: 2px;
+  }
+
+  span::before {
+    font-size: 2.5rem;
+  }
+
+  span::after {
+    font-size: 2.5rem;
   }
 
   .title-about {
@@ -1021,13 +1028,13 @@ span {
     font-size: 1.5rem;
     width: 2.5rem;
     height: 2.5rem;
-    box-shadow: 0 0 2px var(--icon-color);  
+    box-shadow: 0 0 2px var(--icon-color);
   }
 
   @keyframes words {
     0%,
     25% {
-      content: "Mechatronic Eng.";
+      content: "Mechatronic";
     }
     26%,
     40% {
@@ -1040,6 +1047,44 @@ span {
     61%,
     80% {
       content: "Robotics Developer";
+    }
+    81%,
+    100% {
+      content: "Problem Solver";
+    }
+  }
+}
+
+@media screen and (max-width: 375), screen and (max-height: 667px) {
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .projects {
+    margin-top: 30rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  @keyframes words {
+    0%,
+    25% {
+      content: "Mechatronic";
+    }
+    26%,
+    40% {
+      content: "Fullstack Dev";
+    }
+    41%,
+    60% {
+      content: "Web Developer";
+    }
+    61%,
+    80% {
+      content: "Robotics Dev";
     }
     81%,
     100% {
