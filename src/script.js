@@ -35,10 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
           window.open("https://github.com/Xtalism/object-detection", "_blank");
           break;
         case "portfolio":
-          window.open(
-            "https://portfolio-d8k.pages.dev/#home",
-            "_blank"
-          );
+          window.open("https://portfolio-d8k.pages.dev/#home", "_blank");
           break;
         case "robotic-arm":
           window.open(
@@ -46,8 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
             "_blank"
           );
           break;
+        case "ytDownloader":
+          window.open(
+            "https://github.com/Xtalism/youtube-downloader",
+            "_blank"
+          );
+          break;
         default:
           console.log("No matching link found.");
+          break;
       }
     });
   });
