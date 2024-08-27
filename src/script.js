@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var buttons = document.querySelectorAll("a[href='#']");
+  var panels = document.querySelectorAll("div[class='project']");
 
   buttons.forEach(function (button) {
     button.addEventListener("click", function (event) {
@@ -22,10 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var panels = document.querySelectorAll("div[class='project']");
 
   panels.forEach(function (panel) {
     panel.addEventListener("click", function (event) {
